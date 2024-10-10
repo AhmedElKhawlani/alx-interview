@@ -11,7 +11,7 @@ def canUnlockAll(boxes):
     The function
     """
     if boxes == []:
-        return False
+        return True
     keys = boxes[0]
     opened = [0]
     number_of_boxes = len(boxes)
