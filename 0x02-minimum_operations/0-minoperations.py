@@ -9,7 +9,13 @@ def minOperations(n):
     """
     The Function minOperations(n)
     """
-    L = [0, 1, 2, 3, 4]
-    for i in range(5, n + 1):
-        L.append(min(1 + L[i - 1], 2 + L[i // 2]))
-    return L[n]
+    if n <= 4:
+        return 4
+    min_op = 0
+    div = 2
+    while n > 1:
+        while n % div == 0:
+            min_op += div
+            n //= div
+        div += 1
+    return min_op
