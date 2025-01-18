@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Prime Game Solution
 This script defines a solution to determine the winner of the Prime Game.
