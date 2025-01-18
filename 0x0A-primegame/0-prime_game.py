@@ -8,12 +8,6 @@ This script defines a solution to determine the winner of the Prime Game.
 def generate_primes(n):
     """
     Generate a list of prime numbers from 1 to n (inclusive).
-
-    Args:
-        n (int): The upper limit of the range.
-
-    Returns:
-        list: A list of prime numbers within the range.
     """
     primes_list = []
     sieve = [True] * (n + 1)
@@ -28,14 +22,6 @@ def generate_primes(n):
 def is_winner(rounds, nums):
     """
     Determine the winner of the Prime Game.
-
-    Args:
-        rounds (int): The number of rounds to play.
-        nums (list): List of upper limits for each round.
-
-    Returns:
-        str: The name of the winner ("Maria" or "Ben"),
-        or None if there's no winner.
     """
     if not rounds or not nums or rounds == 0 or not nums:
         return None
